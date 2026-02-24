@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special For You ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4b7d;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffe6ec;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease forwards;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+    animation: fadeIn 3s ease forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <button onclick="showMessage()">Klik untuk kejutan 💌</button>
+
+    <div id="message" class="hidden">
+        <h1>I love u ♥️</h1>
+        <p>
+            Dunia mungkin bakal terus berubah dan makin berisik, 
+            tapi aku janji untuk tetap jadi tempat tenangnya kamu. 
+            Aku nggak butuh yang sempurna, aku cuma butuh kamu di sampingku. 
+            Mari kita buat cerita ini bertahan, bukan cuma untuk sekarang, 
+            tapi sampai selamanya.
+        </p>
+    </div>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
